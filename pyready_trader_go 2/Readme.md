@@ -163,7 +163,7 @@ To run a match, use the "run" command and specify the autotraders you
 wish to participate in the match:
 
 ```shell
-python3 rtg.py run [AUTOTRADER FILENAME [AUTOTRADER FILENAME]]
+python3 rtg.py run autotrader.py
 ```
 
 Each autotrader must have a corresponding JSON file (with the same filename,
@@ -218,24 +218,5 @@ autotrader. To access the GIT repository, you'll first need to 'clone' it.
 For example:
 
 ```shell
-git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/TEAM_NAME
+git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/tanmayxsharma
 ```
-
-(replace 'TEAM_NAME' with your team name.)
-
-To submit your autotrader, you need to _commit_ your `autotrader.py` file to the
-GIT repository and then _push_ that commit to your Git repository. For example:
-
-```shell
-git add autotrader.py
-git commit -m "Updating my autotrader"
-git push
-```
-
-Do _not_ put the `autotrader.py` file in a folder and do _not_ include any other
-files (any other files will be ignored). You may only submit one autotrader (i.e.
-you cannot submit both a Python and a C++ autotrader). 
-
-You may replace your autotrader with a new one at any time. When each
-tournament starts we'll use the autotrader in your GIT repository at the
-cut-off time for that tournament.
